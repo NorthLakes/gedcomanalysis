@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ListPreference
+        android:key="pref_FileLocation"
+        android:title="@string/pref_FileLocation"
+        android:dialogTitle="@string/pref_FileLocation"
+        android:entries="@array/pref_FileLocation_entries"
+        android:entryValues="@array/pref_FileLocation_values"
+        android:defaultValue="@string/pref_FileLocation_default" />
+    
+</PreferenceScreen>

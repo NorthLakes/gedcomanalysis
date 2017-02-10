@@ -1,0 +1,2705 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<TextView
+		android:text="@string/individual"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	    	    
+	<TextView 
+	    android:id="@+id/ifullnamelabel"
+	    android:text="@string/fullname" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>    	    	    
+	<TextView 
+	    android:id="@+id/ifullname" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ifullnamelabel" /> 		   	    
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 
+	<TextView 
+	    android:id="@+id/igivennameslabel"
+	    android:text="@string/givennames" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>    	    	    	    	    
+	<TextView 
+	    android:id="@+id/igivennames"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/igivennameslabel" />		   	    
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 
+	<TextView 
+	    android:id="@+id/isurnamelabel"
+	    android:text="@string/surname" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    		
+	<TextView 
+	    android:id="@+id/isurname"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/isurnamelabel" />
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 
+	<TextView 
+	    android:id="@+id/ialiaslabel"
+	    android:text="@string/alias" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    		
+	<TextView 
+	    android:id="@+id/ialias"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ialiaslabel" />
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 
+	<TextView 
+	    android:id="@+id/isexlabel"
+	    android:text="@string/sex" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    		
+	<TextView
+		android:id="@+id/isex"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/isexlabel" />
+	</RelativeLayout>	
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:id="@+id/eventbirthlabel"
+		android:text="@string/eventbirth"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 
+	<TextView
+	    android:id="@+id/ibirthdatelabel"
+	    android:text="@string/date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    							
+	<TextView 
+	    android:id="@+id/ibirthdate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthdatelabel"/>
+	</RelativeLayout>
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" >
+	<TextView
+	    android:id="@+id/ibirthplacelabel"
+	    android:text="@string/place"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    							
+	<TextView 
+	    android:id="@+id/ibirthplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthplacelabel"/>
+	</RelativeLayout>
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibirthmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibirthmap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>
+	</RelativeLayout -->	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibirthmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibirthlatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthmaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibirthlati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthlatilabel"/>
+	<TextView 
+	    android:id="@+id/ibirthlonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthlati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibirthlong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthlonglabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView
+	    android:id="@+id/ibirthaddresslabel"
+	    android:text="@string/address"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    						
+	<TextView 
+	    android:id="@+id/ibirthaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthaddresslabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView
+	    android:id="@+id/ibirthaddress1label"
+	    android:text="@string/address1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    						
+	<TextView 
+	    android:id="@+id/ibirthaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthaddress1label"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" >
+	<TextView
+	    android:id="@+id/ibirthcitylabel"
+	    android:text="@string/city"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    							
+	<TextView 
+	    android:id="@+id/ibirthcity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthcitylabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView
+	    android:id="@+id/ibirthstatelabel"
+	    android:text="@string/state"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    						
+	<TextView 
+	    android:id="@+id/ibirthstate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthstatelabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView
+	    android:id="@+id/ibirthpostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    						
+	<TextView 
+	    android:id="@+id/ibirthpost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthpostlabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView
+	    android:id="@+id/ibirthcountrylabel"
+	    android:text="@string/country"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    						
+	<TextView 
+	    android:id="@+id/ibirthcountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibirthcountrylabel"/>
+	</RelativeLayout>	
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/eventchr"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrtypelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrtype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrtypelabel"/>
+	</RelativeLayout>	
+		
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrdatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrdate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrdatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrmap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrmaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrlatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrmaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrlati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrlatilabel"/>
+	<TextView 
+	    android:id="@+id/ichrlonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrlati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrlong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrlonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichraddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichraddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichraddresslabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichraddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichraddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichraddress1label"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrcitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrcity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrcitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrstatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrstate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrstatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/ichrpostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrpost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrpostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ichrcountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ichrcountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ichrcountrylabel"/>
+	</RelativeLayout>	
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/eventimmi"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmitypelabel"
+	    android:text="@string/type" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmitype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmitypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmidatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmidate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmidatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmiplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmiplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmiplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmimaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmimap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmimaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmimaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmilatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmimaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmilati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmilatilabel"/>
+	<TextView 
+	    android:id="@+id/iimmilonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmilati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmilong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmilonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmiaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmiaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmiaddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmiaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmiaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmiaddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmiaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmiaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmiaddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmiaddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmiaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmiaddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmicitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmicity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmicitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmistatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmistate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmistatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/iimmipostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmipost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmipostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iimmicountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iimmicountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iimmicountrylabel"/>
+	</RelativeLayout>	
+
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/eventemmi"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmitypelabel"
+	    android:text="@string/type" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmitype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmitypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmidatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmidate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmidatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmiplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmiplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmiplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmimaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmimap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmimaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmimaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmilatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmimaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmilati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmilatilabel"/>
+	<TextView 
+	    android:id="@+id/iemmilonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmilati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmilong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmilonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmiaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmiaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmiaddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmiaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmiaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmiaddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmiaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmiaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmiaddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmiaddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmiaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmiaddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmicitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmicity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmicitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmistatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmistate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmistatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/iemmipostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmipost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmipostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iemmicountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iemmicountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iemmicountrylabel"/>
+	</RelativeLayout>	
+
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 	
+	
+	<TextView
+		android:text="@string/eventoccu"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccupationlabel"
+	    android:text="@string/occupation"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccupation"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccupationlabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccutypelabel"
+	    android:text="@string/type"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccutype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccutypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccudatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccudate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccudatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccuplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccuplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccuplacelabel"/>
+	</RelativeLayout>	
+		
+	<!--RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccumaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccumap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccumaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccumaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iocculatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccumaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iocculati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iocculatilabel"/>
+	<TextView 
+	    android:id="@+id/iocculonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iocculati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iocculong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iocculonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccuaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccuaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccuaddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccuaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccuaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccuaddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccuaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccuaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccuaddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccuaddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccuaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccuaddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccucitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccucity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccucitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccustatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccustate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccustatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/ioccupostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccupost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccupostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ioccucountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ioccucountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ioccucountrylabel"/>
+	</RelativeLayout>	
+						
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 	
+	
+	<TextView
+		android:text="@string/eventeven"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ieventypelabel"
+	    android:text="@string/type"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ieventype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ieventypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievendatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievendate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievendatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenmap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenmaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenlatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenmaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenlati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenlatilabel"/>
+	<TextView 
+	    android:id="@+id/ievenlonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenlati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenlong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenlonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenaddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenaddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenaddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenaddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenaddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievencitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievencity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievencitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievenstatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenstate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenstatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/ievenpostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievenpost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievenpostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ievencountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ievencountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ievencountrylabel"/>
+	</RelativeLayout>	
+						
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/eventdeath"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideattypelabel"
+	    android:text="@string/type" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideattype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideattypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatdatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatdate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatdatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatmap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatmaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatlatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatmaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatlati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatlatilabel"/>
+	<TextView 
+	    android:id="@+id/ideatlonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatlati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatlong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatlonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideataddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideataddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideataddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideataddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideataddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideataddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideataddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideataddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideataddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideataddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideataddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideataddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatcitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatcity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatcitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatstatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatstate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatstatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/ideatpostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    	    	    	    			    					
+	<TextView 
+	    android:id="@+id/ideatpost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatpostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ideatcountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ideatcountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ideatcountrylabel"/>
+	</RelativeLayout>	
+
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/eventburi"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburitypelabel"
+	    android:text="@string/type" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburitype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburitypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburidatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburidate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburidatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburiplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburiplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburiplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburimaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburimap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburimaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburimaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburilatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburimaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburilati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburilatilabel"/>
+	<TextView 
+	    android:id="@+id/iburilonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburilati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburilong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburilonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburiaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburiaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburiaddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburiaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburiaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburiaddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburiaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburiaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburiaddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburiaddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburiaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburiaddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburicitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburicity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburicitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburistatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburistate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburistatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/iburipostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    	    	    	    			    					
+	<TextView 
+	    android:id="@+id/iburipost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburipostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iburicountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iburicountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iburicountrylabel"/>
+	</RelativeLayout>	
+
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 	
+	
+	<TextView
+		android:text="@string/eventbapm"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmtypelabel"
+	    android:text="@string/type"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmtype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmtypelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmdatelabel"
+	    android:text="@string/date" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmdate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmdatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmplacelabel"
+	    android:text="@string/place" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmplace"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmplacelabel"/>
+	</RelativeLayout>	
+		
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmmap"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmmaplabel"/>
+	</RelativeLayout -->	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmmaplabel"
+	    android:text="@string/map" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmlatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmmaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmlati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmlatilabel"/>
+	<TextView 
+	    android:id="@+id/ibapmlonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmlati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmlong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmlonglabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmaddresslabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmaddresscontlabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmaddress1label"/>
+	</RelativeLayout>	
+
+		<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmaddress1contlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmaddress1contlabel"/>
+	</RelativeLayout>	
+			
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmcitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmcity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmcitylabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmstatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmstate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmstatelabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+
+	<TextView
+	    android:id="@+id/ibapmpostlabel"
+	    android:text="@string/post"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmpost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmpostlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ibapmcountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ibapmcountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ibapmcountrylabel"/>
+	</RelativeLayout>	
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/family"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ifamilyclabel"
+	    android:text="@string/childof" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ifamilyc"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ifamilyclabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/ifamilyslabel"
+	    android:text="@string/parentin" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/ifamilys"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ifamilyslabel"/>
+	</RelativeLayout>	
+							
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/residences"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iresitypelabel"
+	    android:text="@string/type" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresitype"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresitypelabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+		<TextView 
+			android:id="@+id/iresidatelabel"
+			android:text="@string/date" 
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />    	    	    	    	    			    						
+		<TextView 
+			android:id="@+id/iresidate"
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/iresidatelabel"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+		<TextView 
+			android:id="@+id/iresiplacelabel"
+			android:text="@string/place" 
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />    	    	    	    	    			    						
+		<TextView 
+			android:id="@+id/iresiplace"
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/iresiplacelabel"/>
+	</RelativeLayout>	
+	
+	<!-- RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+		<TextView 
+			android:id="@+id/iresimaplabel"
+			android:text="@string/map" 
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />    	    	    	    	    			    						
+		<TextView 
+			android:id="@+id/iresimap"
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/iresimaplabel"/>
+	</RelativeLayout -->	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+		<TextView 
+			android:id="@+id/iresimaplabel"
+			android:text="@string/map" 
+			android:textAppearance="?android:attr/textAppearanceLarge"    
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresilatilabel"
+	    android:text="@string/lat" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresimaplabel" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresilati"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresilatilabel"/>
+	<TextView 
+	    android:id="@+id/iresilonglabel"
+	    android:text="@string/longitude" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresilati" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresilong"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresilonglabel"/>
+	</RelativeLayout>	
+				
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iresaddresslabel"
+	    android:text="@string/address"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresaddress"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresaddresslabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iresaddresscontlabel"
+	    android:text="@string/addresscontd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresaddresscont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresaddresscontlabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iresaddress1label"
+	    android:text="@string/address1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresaddress1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresaddress1label"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iresaddress1contlabel"
+	    android:text="@string/address1contd"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresaddress1cont"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresaddress1contlabel"/>
+	</RelativeLayout>	
+		
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/irescitylabel"
+	    android:text="@string/city" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/irescity"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/irescitylabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/iresstatelabel"
+	    android:text="@string/state" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/iresstate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/iresstatelabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/irespostlabel"
+	    android:text="@string/post" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/irespost"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/irespostlabel"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 	
+	<TextView 
+	    android:id="@+id/irescountrylabel"
+	    android:text="@string/country" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />    	    	    	    	    			    						
+	<TextView 
+	    android:id="@+id/irescountry"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/irescountrylabel"/>
+	</RelativeLayout>	
+								
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/notes"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+	<TextView 
+	    android:id="@+id/inote1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/sources"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	
+	<TextView 
+	    android:id="@+id/isource1"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>
+	
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+
+	<TextView
+		android:text="@string/lastchanged"
+		android:textStyle="bold" 
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" > 			
+	<TextView 
+	    android:id="@+id/ilastchangeddate"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>	
+	<TextView 
+	    android:id="@+id/ilastchangedtime"
+		android:textAppearance="?android:attr/textAppearanceLarge"    
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/ilastchangeddate"/>	
+	</RelativeLayout>	
+		
+	<View 
+    	android:layout_width="match_parent" 
+    	android:layout_height="2dp" 
+    	android:background="?android:attr/listDivider" /> 
+				
+</LinearLayout>
+
+</ScrollView>

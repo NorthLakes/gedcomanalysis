@@ -1,0 +1,246 @@
+package com.example.cliffhorwood.gedcomanalysis;
+
+import com.example.cliffhorwood.gedcomanalysis.R;
+import com.example.cliffhorwood.gedcomanalysis.Classes.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+
+public class ShowIndvDetl2Fragment extends Fragment{
+
+	private String sFragmentName = this.getClass().getSimpleName();
+
+	int prefix = 6;
+	int iCtr = 0;
+
+	String strINDI = "";
+
+	/** 
+	Called once the fragment is associated with its activity.
+	public void onAttach() {
+		super.onAttach(getActivity());
+		Log.i(sFragmentName, "onAttach()");
+	}
+	 */
+
+	/** Called to do initial creation of the fragment. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		Log.i(sFragmentName, "onCreate()");
+	}
+
+	/** Creates and returns the view hierarchy associated with the fragment.  */
+
+	@Override
+	public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		Log.i(sFragmentName, "onCreateView()");
+		View myFragmentView = inflater.inflate(R.layout.indv_listview, container, false);		  
+		return myFragmentView;
+	}
+
+	/**  Tells the fragment that its activity has completed its own Activity.onCreate() */
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+
+		Log.i(sFragmentName, "onActivityCreated()");
+		String str;
+		boolean b;
+
+		MyMethods myMethods = new MyMethods();
+		// String sExtStorageDirectory = myMethods.extStorageDir();
+
+		Bundle extras = getActivity().getIntent().getExtras();
+
+		final String fname = extras.getString("fname");
+		final String iname = extras.getString("iname");
+		final String indvtype    = extras.getString("indvtype");
+		final String vSurname    = extras.getString("surname");
+		final String vFamilyId   = extras.getString("family");
+		final String vFamilytype = extras.getString("familytype");
+
+		// Log.i(sFragmentName, "onActivityCreated() - parentactivity: " + parentactivity);
+		Log.i(sFragmentName, "onActivityCreated() - fname: " + fname);
+		Log.i(sFragmentName, "onActivityCreated() - iname: " + iname);
+		Log.i(sFragmentName, "onActivityCreated() - indvtype: " + indvtype);
+		Log.i(sFragmentName, "onActivityCreated() - vSurname: " + vSurname);
+		Log.i(sFragmentName, "onActivityCreated() - vFamilyId: " + vFamilyId);
+		Log.i(sFragmentName, "onActivityCreated() - vFamilytype: " + vFamilytype);
+
+		// String sFullyQualFileName = sExtStorageDirectory + fname;
+		
+		String strifullname = iname;
+		int poscomma = iname.indexOf(",");
+		String formattediname = iname.substring(poscomma + 2, iname.length()); // given names
+		formattediname = formattediname + " /" + iname.substring(0, poscomma) + "/";
+
+		// loop through the entire file
+		// count how many times the EXACT formatted iname is found
+		// create a list of the found ones
+		// if  one  ONLY is found then the rest of this code is correct
+		// for the below INDI will be needed
+		// if more than 1 is found then work out which one/ones satisfies the (eg source) criteria
+		// if  one  ONLY satisfies the criteria then the rest of this code is largely correct
+		// if more than 1 satisfies the criteria then display a list of them to the user to select one
+
+		List IndvList = new LinkedList();         
+		IndvList      = new ArrayList();          
+
+		List newList  = new LinkedList();
+		newList       = new ArrayList();
+
+		newList = myMethods.LoadTextFileToArray((ArrayList<String>) newList, fname);	
+		
+		int i = 0;
+		iCtr = 0;
+		while (i < newList.size()) {
+			str = (String) newList.get(i);
+			if (str.endsWith("@ INDI")) {
+				strINDI = str.substring(str.indexOf("@") + 1, str.lastIndexOf("@"));
+			}
+			if (str.startsWith( "1 NAME " + formattediname) ) { 
+				iCtr++;
+				IndvList.add(formattediname + " : " + strINDI);
+			}
+			i++;
+		}
+		
+		String striCtr = "Individuals: " + iCtr;
+
+		if (iCtr == 0) {
+			 
+			// Not valid. We should not be here.
+			Log.i(sFragmentName, "There are no individuals. Not valid. We should NOT be here.: " + iCtr);
+
+		}
+		else if (iCtr == 1) {
+
+			// There is only a single individual.  There is no need to display the candidates for the user to select one.
+			// Instead go straight to the show individual details.
+			Log.i(sFragmentName, "There is only a single individual: " + iCtr);
+
+			Intent intent = new Intent();
+			intent.setClass(getActivity(), ShowIndvDetl3aActivity.class);
+			intent.putExtra("fname", fname);
+			intent.putExtra("iname", iname);
+			intent.putExtra("indi", "");
+			intent.putExtra("indvtype",indvtype);
+			intent.putExtra("surname", vSurname);
+			intent.putExtra("family", vFamilyId);
+			intent.putExtra("familytype", vFamilytype);
+			intent.putExtra("parentactivity", sFragmentName);					
+			startActivity(intent);	
+
+		}
+		else if (iCtr > 1) {
+
+			// There is more than one individual.  Display the candidates for the user to select one.
+			Log.i(sFragmentName, "There is more than one individual: " + iCtr);
+
+			ListView lv= (ListView)getView().findViewById(R.id.indvlistview);  // get the inflated view ID element
+
+			// create the grid item mapping
+			String[] from = new String[] {"col_1", "col_2", "col_3"};
+			int[] to = new int[] { R.id.item2, R.id.item3, R.id.item4 };
+
+			// prepare the list of all records
+			List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
+
+			for(int z = 0; z < IndvList.size(); z++){
+				// John /Horwood/ : I0071
+				// scratch1 /scratch2/ : scratch3
+				String scratch = (String) IndvList.get(z);
+				int pos1 = scratch.indexOf(" : ");
+				String scratch3 = scratch.substring(pos1 + 3, scratch.length());
+				int pos2 = scratch.indexOf("/");
+				int pos3 = scratch.lastIndexOf("/");
+				String scratch1 = scratch.substring(0,pos2);
+				String scratch2 = scratch.substring(pos2 + 1, pos3 );
+
+				HashMap<String, String> map = new HashMap<String, String>();
+				map.put("col_1", scratch3);
+				map.put("col_2", scratch2);
+				map.put("col_3", scratch1);
+				fillMaps.add(map);
+			}        
+
+			// fill in the grid_item layout
+			SimpleAdapter adapter = new SimpleAdapter(getActivity(), fillMaps, R.layout.grid_item, from, to);
+			lv.setAdapter(adapter);
+
+			lv.setOnItemClickListener(new OnItemClickListener() {
+				public void onItemClick(AdapterView parent, View view, int position, long id) {       		  
+					String indi_id = ((TextView)view.findViewById(R.id.item2)).getText().toString();
+					Intent intent = new Intent();
+					intent.setClass(getActivity(), ShowIndvDetl3aActivity.class);
+					intent.putExtra("fname", fname);
+					intent.putExtra("iname", iname);
+					intent.putExtra("indi", indi_id);
+					intent.putExtra("indvtype",indvtype);
+					intent.putExtra("surname", vSurname);
+					intent.putExtra("family", vFamilyId);
+					intent.putExtra("familytype", vFamilytype);
+					intent.putExtra("parentactivity", sFragmentName);					
+					startActivity(intent);	    		        	  
+				}
+			});
+
+		}		
+	}
+
+
+	/**	As a fragment is no longer being used, it goes through a reverse series of callbacks:
+	 onPause() 	onStop() onDestroyView() onDestroy() onDetach() **/
+
+	/** Fragment is no longer interacting with the user either because its activity is being paused or a fragment operation is modifying it in the activity.  **/
+	@Override
+	public void onPause() {
+		super.onPause();
+		Log.i(sFragmentName, "onPause()");
+	}
+
+	/** Fragment is no longer visible to the user either because its activity is being stopped or a fragment operation is modifying it in the activity. **/
+	@Override
+	public void onStop() {
+		super.onStop();
+		Log.i(sFragmentName, "onStop()");
+	}
+
+	/** Allows the fragment to clean up resources associated with its View.  **/
+	@Override
+	public void onDestroyView() {
+		super.onDestroyView();
+		Log.i(sFragmentName, "onDestroyView()");
+	}
+
+	/** Called to do final cleanup of the fragment's state. **/
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		Log.i(sFragmentName, "onDestroy()");
+	}
+
+	/** Called immediately prior to the fragment no longer being associated with its activity.  **/
+	@Override
+	public void onDetach() {
+		super.onDetach();
+		Log.i(sFragmentName, "onDetach()");
+	}
+
+}

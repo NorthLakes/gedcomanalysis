@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cliffhorwood.gedcomanalysis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ListFilesLocalActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListDetlActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListFamlActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListFamlAnalysisActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListFamlSummActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListFamlTypeActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListFileAnalysisActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListIndvAnalysisActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListIndvAnalysisSummActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListIndvDetlActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListIndvTypeActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListIndv3Activity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListNoteActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListSourActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListSummActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ListSurnActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ShowDetlActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ShowEventDataActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ShowEventDataActivity_bkup"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ShowIndvDetl1Activity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ShowIndvDetl3aActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ShowSettingsActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ZActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".GetIndividualDetailsActivity"></activity>
+    </application>
+
+</manifest>

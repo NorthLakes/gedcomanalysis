@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="horizontal"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="fill_parent">
+	 	
+<TextView 
+	android:id="@+id/item2"    
+	android:text="@string/sCol1"
+	android:layout_width="0px"
+	android:layout_weight="2"
+	android:layout_height="wrap_content"    
+	android:textAppearance="?android:attr/textAppearanceListItemSmall"    
+	android:gravity="center_vertical"    
+	android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"    
+	android:paddingRight="?android:attr/listPreferredItemPaddingRight"    
+	android:minHeight="?android:attr/listPreferredItemHeightSmall"
+/>
+	
+<TextView 
+	android:id="@+id/item3"    
+	android:text="@string/sCol2"
+	android:layout_width="0px"
+	android:layout_weight="2"
+	android:layout_height="wrap_content"    
+	android:textAppearance="?android:attr/textAppearanceListItemSmall"    
+	android:gravity="center_vertical"    
+	android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"    
+	android:paddingRight="?android:attr/listPreferredItemPaddingRight"    
+	android:minHeight="?android:attr/listPreferredItemHeightSmall"
+/>
+	
+<TextView 
+	android:id="@+id/item4"    
+	android:text="@string/sCol3"
+	android:layout_width="0px"
+	android:layout_weight="2"
+	android:layout_height="wrap_content"    
+	android:textAppearance="?android:attr/textAppearanceListItemSmall"    
+	android:gravity="center_vertical"    
+	android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"    
+	android:paddingRight="?android:attr/listPreferredItemPaddingRight"    
+	android:minHeight="?android:attr/listPreferredItemHeightSmall"
+/>
+	
+</LinearLayout>
